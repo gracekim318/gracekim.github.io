@@ -1,0 +1,162 @@
+@font-face {
+    src: url("../font/NotoSans/NotoSans-Regular.ttf") format('truetype');
+    src: url("../font/NotoSans/NotoSans-Bold.ttf") format('truetype');
+    font-family: 'Noto Sans';
+}
+
+@font-face {
+    src: url("../font/Vcr_Osd_Mono_1.001.ttf") format('truetype');
+    font-family: 'VCR OSD Mono';
+}
+
+#section01{
+    width: 100vw;
+    position: relative;
+    background-color: #c1986e;
+    width: 1920px;
+    height: 980px;
+}
+
+#section01 .hera_image img{
+    /* width: 817px;
+    height: 888px; */
+    position: absolute;
+    left: 550px;
+    top: -30px;
+}
+
+#section02{
+    background: white;
+    position: absolute;
+    top: 980px;
+    z-index: 999;
+    width: 1920px;
+    height: 897px;
+}
+
+#section02 .title{
+    width: 736px;
+    height: 169px;
+    /* background-color: blue;  */
+    position: absolute;
+    top: 133px;
+    left: 260px;
+}
+
+#section02 .title .project_type{
+    font-family: 'NotoSans-Bold';
+    font-size: 18px;
+    width: 240px;
+    height: 14px;
+    /* background-color: blue; */
+}
+
+#section02 .title .project_name{
+    font-family: 'VCR OSD Mono';
+    width: 761px;
+    height: 113px;
+    font-size: 59px;
+    line-height: 70px;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 0;
+}
+
+#section02 .right{
+    width: 526px;
+    height: 620px;
+    position:absolute;
+    right: 260px;
+    top: 97px;
+    font-size: 17px;
+    font-family: 'NotoSans';
+    /* background-color: blue; */
+}
+
+#section02 .right .gray_line_shape{
+    width: 533px;
+    height: 1px;
+    background-color: #cbcbcb;
+    margin-bottom: 12px;
+    margin-top: 32px;
+}
+
+#section02 .right .roles_category{
+    width: 101px;
+    /* height: 87px; */
+    /* background-color: blue; */
+}
+
+#section02 .right .roles_category > div{
+    font-family: 'NotoSans';
+    font-size: 17px;
+}
+
+#section02 .right .roles_category .roles{
+    margin-bottom: 22px;
+    color: #626262;
+}
+
+#section02 .right .roles_category .branding{
+    margin-bottom: 13px;
+}
+
+#section02 .right .tools_category{
+    width: 87px;
+    /* height: 186px; */
+    /* background-color: blue; */
+}
+
+#section02 .right .tools_category .tools{
+    margin-bottom: 28px;
+    color: #626262
+}
+
+#section02 .right .tools_category .photoshop, .illustrator, .html, .css, .jquery{
+    margin-bottom: 13px;
+}
+
+#section02 .right .date_category{
+    width: 113px;
+    height: 64px;
+    /* background-color: blue; */
+}
+
+#section02 .right .date_category .date{
+    margin-bottom: 28px;
+    color: #626262
+}
+
+#section02 .right .date_category .actual_date{
+    width: 160px;
+}
+
+#section02 .right .description_category{
+    width: 521px;
+    height: 192px;
+}
+
+#section02 .right .description_category .description{
+    margin-bottom: 28px;
+    color: #626262;
+}
+
+#section02 .right .description_category .description_text{
+    line-height: 21px;
+}
+
+#section03{
+    width: 1920px;
+    height: 5735px;
+    position: absolute;
+    top: 1966px;
+    left: 260px;
+}
+
+#section03 .hera_promotion img{
+    /* position: absolute;
+    top: 0;
+    left: 260px; */
+    width: 1400px;
+    height: 5502px;
+}

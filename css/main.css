@@ -1,0 +1,639 @@
+@font-face {
+    src: url("../font/Vcr_Osd_Mono_1.001.ttf") format('truetype');
+    font-family: 'VCR OSD Mono';
+}
+
+
+.noise{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999999;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+#section01{
+    width: 100vw;
+    background: #908974;
+    /* background-color: black; */
+}
+
+#section01 .box{
+    z-index:99;
+}
+
+#section01 .me{
+    animation: move_r 2s infinite alternate;
+    position: absolute;
+    top: 50px;
+}
+
+@keyframes move_r {
+    from {
+        transform: translateX(600px);
+    }
+    to {
+        transform: translateX(800px);
+    }
+}
+
+#section01 > div{
+    position: absolute;
+}
+
+#section01 .left{
+    font-family: 'VCR OSD Mono';
+    color: white;
+    font-size: 30pt;
+    z-index: 999;
+    left: 188px;
+    top: 122px;
+}
+
+#section01 .left .arrow_right{
+    position: absolute;
+    left: 64px;
+    top: 12px;
+}
+
+#section01 .right{
+    font-family: 'VCR OSD Mono';
+    color: white;
+    font-size: 30pt;
+    z-index: 999;
+    right: 173px;
+    top: 122px;
+    width: 282px;
+    height: 60px;
+
+}
+
+#section01 .right .channel{
+    position: absolute;
+    top: 39px;
+    left: 25px;
+}
+
+#section01 .right .arrow_left{
+    position: absolute;
+    left: -8px;
+    bottom: -30px;
+}
+
+#section01 .right .arrow_right{
+    position: absolute;
+    right: -8px;
+    bottom: -30px;
+}
+
+#section01 .under{
+    font-family: 'VCR OSD Mono';
+    color: white;
+    font-size: 70pt;
+    z-index: 999;
+    position: absolute;
+    left: 184px;
+    bottom: 114px;
+    /*width: 1610px;*/
+    /*background: red;*/
+    white-space: nowrap;
+}
+
+
+#section01 .under .color{
+    display: inline-block;
+    position: relative;
+    color: #234749;
+}
+
+#section01 .under .color > span{
+    color:#fff;
+    position: relative;
+    z-index: 15;
+}
+
+#section01 .under .color:before{
+    content: 'GRACE';
+    color: #234749;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: 10;
+}
+#section01 .under .color:after{
+    content: 'GRACE';
+    color: #511f1b;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+}
+
+#section02{
+    width: 300vw;
+    background-color: black;
+    position: absolute;
+    left: -2px;
+}
+
+#section02 > div{
+    position: absolute;
+}
+
+#section02 .intro{
+    font-family: 'VCR OSD Mono';
+    color: white;
+    z-index: 999;
+    left: 192px;
+    top: 223px;
+    position: absolute;
+    width: 512px;
+    height: 520px;
+    /*background-color: red;*/
+}
+
+#section02 .intro .info{
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 294px;
+    height: 520px;
+    line-height: 25px;
+    /*background-color: blue;*/
+}
+
+#section02 .intro_color{
+    display: inline-block;
+    position: relative;
+    font-size: 32px;
+    letter-spacing: 4.5px;
+}
+
+#section02 .intro_color > span{
+    color:#fff;
+    position: relative;
+    z-index: 15;
+}
+
+#section02 .intro_color:before{
+    content: 'INTRO';
+    color: #234749;
+    position: absolute;
+    left: 2.5px;
+    top: 2.5px;
+    z-index: 10;
+}
+#section02 .intro_color:after{
+    content: 'INTRO';
+    color: #511f1b;
+    position: absolute;
+    left: -2.5px;
+    top: -2.5px;
+}
+
+#section02 .contact_color{
+    display: inline-block;
+    position: relative;
+    font-size: 32px;
+    letter-spacing: 4.5px;
+}
+
+#section02 .contact_color > span{
+    color:#fff;
+    position: relative;
+    z-index: 15;
+}
+
+#section02 .contact_color:before{
+    content: 'CONTACT';
+    color: #234749;
+    position: absolute;
+    left: 2.5px;
+    top: 2.5px;
+    z-index: 10;
+}
+#section02 .contact_color:after{
+    content: 'CONTACT';
+    color: #511f1b;
+    position: absolute;
+    left: -2.5px;
+    top: -2.5px;
+}
+
+#section02 .contact{
+    font-family: 'VCR OSD Mono';
+    color: white;
+    z-index: 999;
+    left: 914px;
+    top: 223px;
+    position: absolute;
+    width: 539px;
+    height: 95px;
+    /*background-color: red;*/
+}
+
+#section02 .contact .info{
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 259px;
+    height: 95px;
+    /*background-color: blue;*/
+    line-height: 25px;
+}
+
+#section02 .works_color{
+    display: inline-block;
+    position: relative;
+    font-size: 32px;
+    letter-spacing: 4.5px;
+}
+
+#section02 .works_color > span{
+    color:#fff;
+    position: relative;
+    z-index: 15;
+}
+
+#section02 .works_color:before{
+    content: 'WORKS';
+    color: #234749;
+    position: absolute;
+    left: 2.5px;
+    top: 2.5px;
+    z-index: 10;
+}
+
+#section02 .works_color:after{
+    content: 'WORKS';
+    color: #511f1b;
+    position: absolute;
+    left: -2.5px;
+    top: -2.5px;
+}
+
+#section02 .works{
+    font-family: 'VCR OSD Mono';
+    color: white;
+    z-index: 999;
+    left: 1768px;
+    top: 223px;
+    position: absolute;
+    width: 3565px;
+    height: 607px;
+    display: flex;
+    /*background-color: red;*/
+    margin-right: 100px;
+}
+
+
+#section02 .works .info{
+    font-size: 20px;
+    position: absolute;
+    left: 253px;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    /*width: 3313px;*/
+    width: 3380px;
+    height: 610px;
+    /*width: 100vw;*/
+    /*background-color: cyan;*/
+}
+
+/* #section02 .works .receipt{ */
+    /*margin-right: 100px;*/
+/* } */
+
+#section02 .works .info > div{
+    position: relative;
+}
+
+#section02 .works .info .float{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /*background: red;*/
+    opacity: 0;
+    transition: all 1s;
+}
+#section02 .works .info > div:hover .float{
+    opacity: 1;
+
+}
+
+#section02 .float .thom_browne_hover{
+    position: absolute;
+    right: 38px;
+    top: -63px;
+}
+
+#section02 .float .thom_browne_logo{
+    position: absolute;
+    left: 37px;
+    top: 53px;
+    /*background-color: blue;*/
+}
+
+#section02 .float .title{
+    width: 177px;
+    height: 49px;
+    /*background-color: blue;*/
+    font-size: 21px;
+    position: absolute;
+    left: 34px;
+    top: 334px;
+    text-align: left;
+}
+
+/* #section02 .float .title :nth-child(3){
+    width: 177px;
+    height: 49px;
+} */
+
+#section02 .float .text .title .first_line{
+    position: absolute;
+    left: 0;
+    /*background-color: blue;*/
+}
+
+#section02 .float .text .title .second_line{
+    position: absolute;
+    left: 0;
+    top: 29px;
+    /*background-color: blue;*/
+}
+
+#section02 .float .bar_under{
+    position: absolute;
+    left: 34px;
+    top: 415px;
+    font-size: 15px;
+    width: 381px;
+    height: 118px;
+    /*background-color: blue;*/
+}
+
+#section02 .float .description{
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 18px;
+    /*background-color: blue;*/
+}
+
+#section02 .float .calculation{
+    position: absolute;
+    width: 196px;
+    height: 117px;
+    /*background-color: blue;*/
+    right: 0;
+    top: 0;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    line-height: 23px;
+}
+
+#section02 .float .label{
+    position: absolute;
+    left: 15px;
+    /*background-color: blue;*/
+}
+
+#section02 .float .label .total{
+    position: absolute;
+    right: 0;
+    top: 90px;
+    /*background-color: red;*/
+}
+
+
+#section02 .float .calculation .numbers{
+    position: absolute;
+    right: 0;
+    text-align: right;
+    /*background-color: blue;*/
+}
+
+#section02 .float .calculation .total_number{
+    position: absolute;
+    right: 0;
+    top: 90px;
+    font-size: 17px;
+}
+
+
+#section02 .float .line_1{
+    position: absolute;
+    top: 73px;
+}
+
+#section02 .float .line_2{
+    position: absolute;
+    top: 116px;
+}
+
+#section02 .float .nintendo_switch_logo{
+    position: absolute;
+    left: 37px;
+    top: 53px;
+    /*background-color: blue;*/
+}
+
+#section02 .float .nintendo_switch_hover{
+    position: absolute;
+    left: 37px;
+    top: 108px;
+}
+
+#section02 .float .hera_logo{
+    position: absolute;
+    left: 38px;
+    top: 42px;
+    /*background-color: blue;*/
+}
+
+#section02 .float .hera_hover{
+    position: absolute;
+    left: 172px;
+    top: -23px;
+}
+
+#section02 .float .thank_you_logo img{
+    /* width: 35.12%;
+    height: 35.12%; */
+    position: absolute;
+    left: 28px;
+    top: 45px;
+    /*background-color: blue;*/
+}
+
+#section02 .float .thank_you_hover{
+    position: absolute;
+    left: 120px;
+    top: -20px;
+}
+
+#section02 .float .fine_art_hover{
+    position: absolute;
+    left: 139px;
+    top: -80px;
+}
+
+#section02 .float .southwest_hover img{
+    position: absolute;
+    left: 15px;
+    top: -10px;
+    width: 652px;
+    height: 435px;
+}
+
+#section02 .float .southwest_logo img{
+    width: 147px;
+    height: 82px;
+    position: absolute;
+    left: 33px;
+    top: 25px;
+    filter:grayscale(100%)
+    /* background-color: blue; */
+}
+
+#section02 .receipt{
+    display: flex;
+    justify-content: space-between;
+}
+
+#section02 .works .info .text{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+}
+
+#section02 .title{
+    display: flex;
+    width: 455px;
+    height: 95px;
+    line-height: 20px;
+    position: absolute;
+    top: 75px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+    margin-bottom: 100px;
+    /*background-color: blue;*/
+}
+
+#section02 .order{
+    position: absolute;
+    top: 258px;
+    /*transform: translateX(-50%);*/
+    font-size: 13px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: blue;*/
+    line-height: 20px;
+}
+
+#section02 .bar_above{
+    position: absolute;
+    top: 366px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    width: 380px;
+    height: 22px;
+}
+
+#section02 .bar_above .qty{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#section02 .bar_above .descr{
+    position: absolute;
+    left: 90px;
+    top: 0;
+}
+
+#section02 .bar_above .perc{
+    position: absolute;
+    right: 25px;
+    top: 0;
+}
+
+#section02 .bar_under{
+    position: absolute;
+    bottom: 108px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 380px;
+    height: 92px;
+    font-size: 13px;
+    line-height: 15px;
+    /*background-color: blue;*/
+}
+
+/*#section02 .bar_under .qty_number{*/
+/*    position: absolute;*/
+/*    left: 93px;*/
+/*    top: 512px;*/
+/*}*/
+
+#section02 .bar_under .tools{
+    position: absolute;
+    left: 90px;
+}
+
+#section02 .bar_under .percentage{
+    position: absolute;
+    right: 16px;
+}
+
+#section02 .barcode{
+    position: absolute;
+    top: 512px;
+    width: 200px;
+    height: 75px;
+    align-items: center;
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* line-height: 25px; */
+}
+
+#section02 .barcode .message{
+    margin-bottom: 10px;
+}
+
+
+
+
+/*#section03{*/
+/*        width: 100vw;*/
+/*    background: #3f5cbe;*/
+/*}*/
+/*#section04{*/
+/*    width: 100vw;*/
+/*    background: #efb456;*/
+/*}*/
+

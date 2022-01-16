@@ -1,0 +1,741 @@
+
+
+/* 
+
+.startPoint{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+    z-index: 899998989;
+    background: black;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+} */
+
+/* @font-face {
+    src: url("../font/NotoSans-Bold.ttf") format('truetype');
+    src: url("../font/NotoSans-BoldItalic.ttf") format('truetype');
+    src: url("../font/NotoSans-Italic.ttf") format('truetype');
+    src: url("../font/NotoSans-Regular.ttf") format('truetype');
+    font-family: 'Noto Sans';
+} */
+
+
+@font-face {
+    src: url("../font/NotoSans/NotoSans-Regular.ttf") format('truetype');
+    src: url("../font/NotoSans/NotoSans-Bold.ttf") format('truetype');
+    font-family: 'Noto Sans';
+}
+
+@font-face {
+    src: url("../font/Vcr_Osd_Mono_1.001.ttf") format('truetype');
+    font-family: 'VCR OSD Mono';
+}
+
+@font-face {
+    src: url("../font/north_carossela/north_carossela.otf") format('truetype');
+    font-family: 'North Carossela';
+}
+
+#container{
+    width: 1920px;
+    height: 24617px;
+}
+
+#section01{
+    width: 100vw;
+    position: relative;
+    background-color: white;
+    /* background: #908974; */
+}
+
+#section01 .main_image img{
+    width: 1940px;
+    height: 990px;
+    z-index:999;
+}
+
+#section02{
+    background: white;
+}
+
+#section02 .title{
+    width: 736px;
+    height: 169px;
+    /* background-color: blue;  */
+    position: absolute;
+    top: 133px;
+    left: 260px;
+}
+
+#section02 .title .project_type{
+    font-family: 'NotoSans-Bold';
+    font-size: 18px;
+    width: 129px;
+    height: 14px;
+    /* background-color: blue; */
+}
+
+#section02 .title .project_name{
+    font-family: 'VCR OSD Mono';
+    width: 736px;
+    height: 113px;
+    font-size: 59px;
+    line-height: 70px;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 0;
+}
+
+#section02 .right{
+    width: 526px;
+    height: 620px;
+    position:absolute;
+    right: 260px;
+    top: 97px;
+    font-size: 17px;
+    font-family: 'NotoSans';
+    /* background-color: blue; */
+}
+
+#section02 .right .gray_line_shape{
+    width: 533px;
+    height: 1px;
+    background-color: #cbcbcb;
+    margin-bottom: 12px;
+    margin-top: 32px;
+}
+
+#section02 .right .roles_category{
+    width: 101px;
+    /* height: 87px; */
+    /* background-color: blue; */
+}
+
+#section02 .right .roles_category > div{
+    font-family: 'NotoSans';
+    font-size: 17px;
+}
+
+#section02 .right .roles_category .roles{
+    margin-bottom: 22px;
+    color: #626262;
+}
+
+#section02 .right .roles_category .branding{
+    margin-bottom: 13px;
+}
+
+#section02 .right .tools_category{
+    width: 87px;
+    height: 186px;
+    /* background-color: blue; */
+}
+
+#section02 .right .tools_category .tools{
+    margin-bottom: 28px;
+    color: #626262
+}
+
+#section02 .right .tools_category .photoshop, .illustrator, .html, .css, .jquery{
+    margin-bottom: 13px;
+}
+
+#section02 .right .date_category{
+    width: 113px;
+    height: 64px;
+    /* background-color: blue; */
+}
+
+#section02 .right .date_category .date{
+    margin-bottom: 28px;
+    color: #626262
+}
+
+#section02 .right .description_category{
+    width: 521px;
+    height: 192px;
+}
+
+#section02 .right .description_category .description{
+    margin-bottom: 28px;
+    color: #626262;
+}
+
+#section02 .right .description_category .description_text{
+    line-height: 21px;
+}
+
+/* #section02 .description{
+    width: 410px;
+    height: 207px;
+    background-color: blue;
+    position: absolute;
+    top: 659px;
+    left: 1130px;
+    font-family: 'NotoSans-Bold';
+    font-size: 18px;
+    line-height: 20px;
+} */
+
+#section03 .thom_browne_cover img{
+    width: 100vw;
+    /* text-align: center; */
+    /* position: relative; */
+}
+
+#section03 .thom_browne_cover{
+    width: 1920px;
+    height: 270px;
+    z-index: 999;
+}
+
+#section04{
+    background-color: #3f3f3f;
+    width: 1920px;
+    height: 666px;
+}
+
+#section04 .color_box01{
+    width: 640px;
+    height: 274px;
+    background-color: #808080;
+    z-index:999;
+    position: absolute;
+    bottom: 0;
+}
+
+#section04 .color_box02{
+    width: 640px;
+    height: 274px;
+    background-color: #3f3f3f;
+    z-index:999;
+    position: absolute;
+    left: 640px;
+    bottom: 0;
+}
+
+#section04 .color_box03{
+    width: 640px;
+    height: 274px;
+    background-color: #000000;
+    z-index:999;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#section04 .typography{
+    width: 701px;
+    height: 169px;
+    position: absolute;
+    left: 260px;
+    top: 40px;
+    /* background-color: pink; */
+    z-index: 999;
+}
+
+#section04 .typography .typography_label{
+    width: 161px;
+    height: 17px;
+    font-family: 'NotoSans';
+    font-size: 12.5pt;
+    color: white;
+    /* background-color: blue; */
+}
+
+#section04 .typography .fonts{
+    width: 447px;
+    height: 168px;
+    position: absolute;
+    right: 0;
+    top: -2px;
+}
+
+#section04 .typography .fonts .north_carossela{
+    width: 447px;
+    height: 49px;
+    /* background-color: red; */
+    font-family: 'North Carossela';
+    font-size: 48.9pt;
+    color: white;
+}
+
+#section04 .typography .fonts .noto_sans{
+    width: 384px;
+    height: 52px;
+    /* background-color: red; */
+    font-family: 'NotoSans';
+    font-size: 51.3pt;
+    color: white;
+    position: absolute;
+    left: -3px;
+    bottom: 5px;
+}
+
+#section04 .color_box01 .color01{
+    width: 65px;
+    height: 14px;
+    position: absolute;
+    left: 288px;
+    top: 32px;
+    /* background-color: pink; */
+    font-size: 12.5pt;
+    font-family: 'NotoSans';
+    color: black;
+}
+
+#section04 .color_box02 .color02{
+    width: 56px;
+    height: 14px;
+    position: absolute;
+    left: 288px;
+    top: 32px;
+    /* background-color: pink; */
+    font-size: 12.5pt;
+    font-family: 'NotoSans';
+    color: white;
+}
+
+#section04 .color_box03 .color03{
+    width: 67px;
+    height: 14px;
+    position: absolute;
+    left: 288px;
+    top: 32px;
+    /* background-color: pink; */
+    font-size: 12.5pt;
+    font-family: 'NotoSans';
+    color: white;
+}
+
+
+#section05{
+    background: #d2d2d2;
+    width: 1920px;
+    height: 5047px;
+}
+
+#section05 .main_page img{
+    width: 975px;
+    height: 4740px;
+    position: absolute;
+    right: 260px;
+    top: 160px;
+}
+
+#section06{
+    width: 1920px;
+    height: 3202px;
+    background-color: #222222;
+}
+
+#section06 .main_main_page{
+    position: absolute;
+    left: 260px;
+    top: 225px;
+    object-fit: scale-down;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+#section06 .main_main_page img{
+    width: 1400px;
+    height: 743px;
+    object-fit: contain;
+}
+
+#section06 .brand_colors{
+    position: absolute;
+    top: 1223px;
+    right: 396px;
+    width: 750px;
+    height: 884px;
+}
+
+#section06 .brand_colors .red{
+    background-color: #b3241e;
+    position: absolute;
+    left: 0;
+    width: 250px;
+    height: 884px;
+}
+
+#section06 .brand_colors .white{
+    background-color: #ffffff;
+    position: absolute;
+    left: 250px;
+    width: 250px;
+    height: 884px;
+}
+
+#section06 .brand_colors .blue{
+    background-color: #1c2e4e;
+    position: absolute;
+    right: 0;
+    width: 250px;
+    height: 884px;
+}
+
+#section06 .brand_colors_description{
+    position: absolute;
+    top: 1612px;
+    left: 415px;
+    width: 464px;
+    height: 585px;
+}
+
+/* #section06 .brand_colors_description .white_box01{
+    width: 463px;
+    height: 272px;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+}
+
+#section06 .brand_colors_description .white_box01 .description{
+    width: 423px;
+    height: 242px;
+    background-color: blue;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family: 'NotoSans-Bold';
+    font-size: 20px;
+    line-height: 22px;
+} */
+
+#section06 .brand_colors_description .white_box02{
+    width: 463px;
+    height: 262px;
+    position: absolute;
+    bottom: 40px;
+    background-color: #fff;
+}
+
+/* #section06 .brand_colors_description .white_box02 .description{
+    width: 433px;
+    height: 260px;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    font-family: 'NotoSans-Bold';
+    font-size: 17px;
+    line-height: 20px;
+} */
+
+#section06 .brand_colors_description .logo img{
+    position: absolute;
+    bottom: 12px;
+    right: 15px;
+    width: 69px;
+    height: 10px;
+    /* background-color: blue; */
+}
+
+
+#section06 .main_contents{
+    position: absolute;
+    left: 475px;
+    bottom: 0px;
+    z-index:999;
+    object-fit: scale-down;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+#section06 .main_contents img{
+    width: 974px;
+    height: 751px;
+    object-fit: contain;
+}
+
+#section06 .gray_background{
+    width: 1920px;
+    height: 565px;
+    /* z-index:999; */
+    position:absolute;
+    bottom: 0px;
+    background-color: #d2d2d2;
+}
+
+#section07{
+    width: 1920px;
+    height: 12746px;
+    background-color: #d2d2d2;
+    position: absolute;
+    /* top: -1px; */
+}
+
+#section07 .about_brand_page{
+    position: absolute;
+    right: 260px;
+    top: 377px;
+    object-fit: scale-down;
+    overflow: hidden;
+}
+
+#section07 .about_brand_page img{
+    width: 975px;
+    height: 3559px;
+    object-fit: contain;
+}
+
+#section07 .middle_image{
+    position: absolute;
+    top: 4501px;
+}
+
+#section07 .middle_image img{
+    width: 100vw;
+}
+
+#section07 .product_content_page img{
+    position: absolute;
+    left: 353px;
+    top: 5843px;
+    z-index: 999;
+    width: 980px;
+    height: 2476px;
+}
+
+/* #section07 .product_content_left{
+    width: 293px;
+    height: 385px;
+    object-fit: scale-down;
+    overflow: hidden;
+    position: relative;
+}
+
+#section07 .product_content_left img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+} */
+
+#section07 .product_content_left img{
+    width: 350px;
+    height: 385px;
+    position: absolute;
+    left: 0;
+    top: 5581px;
+}
+
+#section07 .product_content_right_top img{
+    width: 350px;
+    height: 385px;
+    position: absolute;
+    right: 0;
+    top: 5581px;
+}
+
+#section07 .product_content_right_middle img{
+    width: 350px;
+    height: 385px;
+    position: absolute;
+    right: 235px;
+    top: 6411px;
+}
+
+#section07 .product_content_right_down img{
+    width: 350px;
+    height: 385px;
+    position: absolute;
+    right: 0;
+    top: 6853px;
+}
+
+#section07 .white_background{
+    width: 1920px;
+    height: 1307px;
+    position:absolute;
+    top: 7240px;
+    background-color: #fff;
+}
+
+/* #section08{
+    width: 1920px;
+    height: 4298px;
+    position: absolute;
+    background-color: blue;
+} */
+
+/* #section08 .product_detail_background{
+    width: 1930px;
+    height: 1561px;
+    position: absolute;
+    bottom: 2641px;
+} */
+
+#section07 .product_detail_background_behind{
+    width: 1930px;
+    height: 1561px;
+    position: absolute;
+    bottom: 2639px;
+    background-color: black;
+}
+
+#section07 .product_detail_background{
+    width: 1930px;
+    height: 1561px;
+    position: absolute;
+    bottom: 2639px;
+    opacity: 0.57;
+}
+
+#section07 .product_detail_background img{
+    width: 100vw;
+}
+
+/* #section07 .product_detail_rabbit{
+
+} */
+
+#section07 .product_detail{
+    width: 408px;
+    height: 633px;
+    background-color: #fff;
+    position: absolute;
+    right: 750px;
+    bottom: 3153px;
+}
+
+#section07 .product_detail .product{
+    width: 366px;
+    height: 400px;
+    background-color: red;
+    /* position: absolute;
+    right: 26px;
+    bottom: 192px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 41px;
+}
+
+#section07 .product-detail .product .product_detail_rabbit{
+    /* width: 366px;
+    height: 401px; */
+    object-fit: scale-down;
+    overflow: hidden;
+    position: relative;
+}
+
+#section07 .product_detail .product .product_detail_rabbit img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#section07 .product_detail .product_under{
+    width: 368px;
+    height: 85px;
+    position: absolute;
+    bottom: 93px;
+    left: 20px;
+    /* background-color: red; */
+}
+
+#section07 .product_detail .product_description{
+    width: 366px;
+    height: 36px;
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    font-family: 'NotoSans';
+    font-size: 13.8px;
+    line-height: 150%;
+}
+
+#section07 .product_detail .first_line{
+    width: 366px;
+    height: 1px;
+    background-color: #c5c5c5;
+    position: absolute;
+    bottom: 39px;
+    /* z-index: 999; */
+}
+
+#section07 .product_detail .price{
+    width: 50px;
+    height: 17px;
+    position: absolute;
+    bottom: 10px;
+    font-family: 'NotoSans';
+    font-size: 13.8px;
+}
+
+#section07 .product_detail .add_to_bag_box{
+    width: 92px;
+    height: 17px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    /* background-color: red; */
+}
+
+#section07 .product_detail .add_to_bag_box .add_to_bag{
+    font-family: 'NotoSans';
+    font-size: 13.8px;
+}
+
+#section07 .product_detail .add_to_bag_box .arrow_down{
+    position: absolute;
+    top: 3px;
+    right: 0;
+}
+
+#section07 .product_detail .second_line{
+    width: 366px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+
+#section07 .last_image{
+    width: 1920px;
+    height: 2639px;
+    position: absolute;
+    bottom: 0;
+}
+
+#section07 .last_image img{
+    width: 100vw;
+}
+
+/* #section07 .product_detail_page{
+    width: 1400px;
+    height: 2020px;
+    object-fit: scale-down;
+    overflow: hidden;
+    position: relative;
+    z-index: 999;
+}
+
+#section07 .product_detail_page img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+} */
+
+#section07 .product_detail_page{
+    position: absolute;
+    bottom: 306px;
+    left: 260px;
+    z-index:999;
+    object-fit: scale-down;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+#section07 .product_detail_page img{
+    width: 1395px;
+    height: 2020px;
+    object-fit: contain;
+}
